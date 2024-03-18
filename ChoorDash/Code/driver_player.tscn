@@ -7,7 +7,7 @@
 size = Vector2(88.7855, 23.9471)
 
 [node name="DriverPlayer" type="CharacterBody2D"]
-rotation = 4.71238
+rotation = 6.28318
 up_direction = Vector2(-0.894427, -0.447214)
 script = ExtResource("1_ep4nv")
 

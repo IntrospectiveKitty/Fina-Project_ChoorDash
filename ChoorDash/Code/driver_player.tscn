@@ -7,22 +7,22 @@
 size = Vector2(88.7855, 23.9471)
 
 [node name="DriverPlayer" type="CharacterBody2D"]
-rotation = 1.57079
+rotation = 4.71238
 up_direction = Vector2(-0.894427, -0.447214)
 script = ExtResource("1_ep4nv")
 
 [node name="Car" type="Sprite2D" parent="."]
 texture_filter = 1
-rotation = -1.56773
 texture = ExtResource("2_1i86g")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -0.000125885)
+rotation = 3.14159
 scale = Vector2(0.470265, 0.34744)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 9.09495e-13)
-rotation = -6.28318
+rotation = -7.85397
 scale = Vector2(0.569504, -1.12418)
 shape = SubResource("RectangleShape2D_c3jb7")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)

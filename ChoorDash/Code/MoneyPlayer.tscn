@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyya8km0uf8k4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qylpb"]
+bg_color = Color(0.94902, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.909804, 0, 0, 1)
+
+[node name="MoneyPlayer" type="PanelContainer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -106.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 134.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qylpb")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Earnings" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "Earnings
+"
+horizontal_alignment = 1
+
+[node name="Tips" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Tips:  $0.00"
+
+[node name="Gas" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Gas:  -$0.00"
+
+[node name="Total" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Total: 
+"
+
+[node name="TotalNum" type="Label" parent="VBoxContainer/Total"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = -1.0
+offset_right = 87.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0.345098, 0.956863, 0.662745, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "$0.00"

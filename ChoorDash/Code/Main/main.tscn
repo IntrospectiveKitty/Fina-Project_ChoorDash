@@ -1,14 +1,34 @@
-[gd_scene load_steps=4 format=3 uid="uid://cnmnu8gupchei"]
+[gd_scene load_steps=6 format=3 uid="uid://cnmnu8gupchei"]
 
 [ext_resource type="Script" path="res://Main/main.gd" id="1_tg8x6"]
 [ext_resource type="PackedScene" uid="uid://mo42hre6jdkg" path="res://driver_player.tscn" id="2_88men"]
 [ext_resource type="PackedScene" uid="uid://c71a238xdq1sj" path="res://level_1.tscn" id="4_ck5bg"]
+[ext_resource type="PackedScene" uid="uid://cyya8km0uf8k4" path="res://MoneyPlayer.tscn" id="4_t3c57"]
+[ext_resource type="PackedScene" uid="uid://dc3gwjhq556v8" path="res://pedestrian.tscn" id="5_7xj8f"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_tg8x6")
 
 [node name="DriverPlayer" parent="." instance=ExtResource("2_88men")]
 position = Vector2(64, 96)
-rotation = 6.28318
 
 [node name="Level1" parent="." instance=ExtResource("4_ck5bg")]
+position = Vector2(0, 2)
+
+[node name="MoneyPlayer" parent="." instance=ExtResource("4_t3c57")]
+offset_left = -113.0
+offset_top = 11.0
+offset_right = -14.0
+offset_bottom = 140.0
+
+[node name="Pedestrian" parent="." instance=ExtResource("5_7xj8f")]
+position = Vector2(639, 208)
+
+[node name="Pedestrian2" parent="." instance=ExtResource("5_7xj8f")]
+position = Vector2(430, 478)
+
+[node name="Pedestrian3" parent="." instance=ExtResource("5_7xj8f")]
+position = Vector2(1122, 451)
+
+[node name="Pedestrian4" parent="." instance=ExtResource("5_7xj8f")]
+position = Vector2(569, 464)
